@@ -20,6 +20,7 @@ import { DashboardComponent } from './pages/admin/dashboard/dashboard.component'
 import { ProductsComponent } from './pages/admin/products/products.component';
 import { NoPageComponent } from './pages/no-page/no-page.component';
 import { BannerComponent } from './components/banner/banner.component';
+
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SubBannerComponent } from './components/sub-banner/sub-banner.component';
@@ -35,6 +36,7 @@ import { CategoryAddComponent } from './pages/admin/category-add/category-add.co
 import { CategoryEditComponent } from './pages/admin/category-edit/category-edit.component';
 import { ProductPageComponent } from './pages/product-page/product-page.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -48,6 +50,7 @@ import { ProductPageComponent } from './pages/product-page/product-page.componen
     DashboardComponent,
     ProductsComponent,
     NoPageComponent,
+
     BannerComponent,
     HeaderComponent,
     FooterComponent,
@@ -62,6 +65,7 @@ import { ProductPageComponent } from './pages/product-page/product-page.componen
     EditProductComponent,
     CategoryEditComponent,
     ProductPageComponent
+
   ],
   imports: [
     BrowserModule,

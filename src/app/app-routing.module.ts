@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AdminLayoutComponent } from './layout/admin-layout/admin-layout.component';
 import { MainLayoutComponent } from './layout/main-layout/main-layout.component';
 import { AboutComponent } from './pages/about/about.component';
+
 import { AddProductComponent } from './pages/admin/add-product/add-product.component';
 import { BannersComponent as ABannersComponent } from './pages/admin/banners/banners.component';
 import { CategoryAddComponent } from './pages/admin/category-add/category-add.component';
@@ -12,13 +13,16 @@ import { DashboardComponent } from './pages/admin/dashboard/dashboard.component'
 import { EditProductComponent } from './pages/admin/edit-product/edit-product.component';
 import { ProductsComponent as AProductsComponent } from './pages/admin/products/products.component';
 import { UsersComponent } from './pages/admin/users/users.component';
+
 import { ContactsComponent } from './pages/contacts/contacts.component';
 import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
 import { NoPageComponent } from './pages/no-page/no-page.component';
+
 import { ProductPageComponent } from './pages/product-page/product-page.component';
 import { SignupComponent } from './pages/signup/signup.component';
 import { AuthorticateGuard } from './services/authorticate.guard';
+
 
 const routes: Routes = [
   {
@@ -27,6 +31,7 @@ const routes: Routes = [
       { path: 'home', component: HomeComponent },
       { path: 'contact', component: ContactsComponent },
       { path: 'about', component: AboutComponent },
+
       { path: 'product', component: ProductPageComponent },
     ]
   },
@@ -48,6 +53,7 @@ const routes: Routes = [
     ]
   },
   { path: '**', component: NoPageComponent },
+
 ];
 
 @NgModule({

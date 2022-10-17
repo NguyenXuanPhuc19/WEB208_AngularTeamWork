@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+
 import { IProduct } from 'src/app/interfaces/product';
 import { ProductService } from 'src/app/services/product.service';
+
 
 @Component({
   selector: 'app-products',
@@ -8,6 +10,7 @@ import { ProductService } from 'src/app/services/product.service';
   styleUrls: ['./products.component.css']
 })
 export class ProductsComponent implements OnInit {
+
   products: IProduct[] = [];
   constructor(private productService: ProductService) { }
 
@@ -21,6 +24,7 @@ export class ProductsComponent implements OnInit {
     this.productService.removeProduct(id).subscribe(() => {
       this.products = this.products.filter(item => item.id !== id)
     })
+
   }
 
 }

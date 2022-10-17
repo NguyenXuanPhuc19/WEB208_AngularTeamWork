@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+
 import { Router } from '@angular/router';
 import { IUserRegister } from 'src/app/interfaces/user';
 import { AuthService } from 'src/app/services/auth.service';
+
 
 @Component({
   selector: 'app-signup',
@@ -9,6 +11,7 @@ import { AuthService } from 'src/app/services/auth.service';
   styleUrls: ['./signup.component.css']
 })
 export class SignupComponent implements OnInit {
+
 
   constructor(private authService: AuthService, private router: Router) { }
 
@@ -45,5 +48,6 @@ export class SignupComponent implements OnInit {
     })
 
   }
+
 
 }
